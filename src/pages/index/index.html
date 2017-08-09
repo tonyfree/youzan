@@ -71,132 +71,15 @@
       </div>
       <div class="hot-goods js-waterfull-wrap" data-src="">
         <ul class="js-list js-lazy" data-src="">
-          <li>
+           <li v-for="list in lists" :key="list.id">
             <div class="goods-item">
               <a href="https://h5.youzan.com/v2/showcase/goods?alias=2fwig6rnqfq6m&amp;source=yzapp&amp;f_platform=yzapp">
                 <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2017/05/06/Fhy3xjNz5XWtcHM0YCZBsUPFpaXL.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
+                  <img class="fadeIn" v-bind:src="list.img">
                 </div>
                 <div class="detail">
-                  <div class="title">i-mu/幻响醛击手除甲醛</div>
-                  <div class="price">￥149.00</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=365dgchyzdtxe&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2017/07/10/FqQYAfXfNGyg_AaV-fJVCaOg4j4l.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
-                </div>
-                <div class="detail">
-                  <div class="title">【现挖48小时内发货】假一罚十 ！正宗天目山小香薯，不让朴实薯农血本无归！</div>
-                  <div class="price">￥49.00</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=3ngl01w7r4b9i&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2017/07/03/FmwQG9tP0Q9nQPm4CDR5zlI9PKBt.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
-                </div>
-                <div class="detail">
-                  <div class="title">【丰巢】【特价29.9元限量500份已售罄】连平鹰嘴桃 5斤装 包邮</div>
-                  <div class="price">￥29.90</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=2xiz0ynyefc9p&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2016/11/04/Fut6-tAwHkUguKtkWIqsEjnvrutt.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
-                </div>
-                <div class="detail">
-                  <div class="title">*【读者专属】HFP全线产品最低64折起 点击下方【选择：种类】即可挑选产品 1WRI</div>
-                  <div class="price">￥63.00</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=1ya5nwvyvb8t1&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2017/07/03/FhlrJkzVeMM46zTh_gwRXkLFvFGt.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
-                </div>
-                <div class="detail">
-                  <div class="title">【广西百色小贵妃--鲜嫩多汁，香味浓郁，皮薄核小，口口留香，新鲜现摘】</div>
-                  <div class="price">￥29.80</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=3nj3a27og505i&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2017/07/08/FtTrpa3fIcNJ3cp4_So1WH26cj9A.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
-                </div>
-                <div class="detail">
-                  <div class="title">【优选】澳洲Swisse钙+维生素D</div>
-                  <div class="price">￥88.00</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=273w8vno6x8jq&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2017/06/01/FsIeFiIjzSmGHo9sOvPpCpTgjODa.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
-                </div>
-                <div class="detail">
-                  <div class="title">【瘦身降三高必备】减脂才是真减肥，集减脂/降三高/抗衰老的高科技黑茶，送家人朋友</div>
-                  <div class="price">￥198.00</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=2ov6kbj4smwwi&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2017/06/13/FjeqHCvSQWKw0S5wD9oroR2NR9rZ.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
-                </div>
-                <div class="detail">
-                  <div class="title">【也许是最适合东方女性的香水】喷一喷，散发女性魅力，未见沙龙香水</div>
-                  <div class="price">￥108.00</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=3np5vvqoc62w7&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2017/04/13/Fq-Lf_Lht3NIaLUOBH6s5z6K0yYU.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
-                </div>
-                <div class="detail">
-                  <div class="title">最火好物！约会神器 ~必备！澳洲Breath Pearls天然清新口气珠 草本精华 无添加 50粒/瓶</div>
-                  <div class="price">￥59.00</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=2ok5vxv8d23qq&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2016/11/06/FpRZ3GWdr-ucvleqtie8GqOqhyhC.jpg?imageView2/2/w/320/h/0/q/75/format/jpg">
-                </div>
-                <div class="detail">
-                  <div class="title">【好物】可站立德国创意双层反向伞长柄男女晴雨伞</div>
-                  <div class="price">￥68.00</div>
+                  <div class="title">{{list.name}}</div>
+                  <div class="price">￥{{list.price}}</div>
                 </div>
               </a>
             </div>
