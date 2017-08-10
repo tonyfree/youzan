@@ -28,18 +28,10 @@
   <div class="vue-el">
     <div class="container with-bottom-nav" style="min-height: 667px;">
       <div class="content">
-        <div class="js-image-swiper custom-image-swiper  custom-image-swiper-single" data-images="1">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swp-page">
-                <a class="js-no-follow" href="https://h5.koudaitong.com/v2/index/rukou">
-                  <img class="goods-main-photo fadeIn" src="https://img.yzcdn.cn/upload_files/2016/07/29/Fl3T06Mu7TpIhR4L1s2tzm8cZrgt.jpg">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="https://maijia.youzan.com/mars/notice/detail?id=" class="notice"></a>
+        <!-- <div class="js-image-swiper custom-image-swiper  custom-image-swiper-single" data-images="1">
+         </div>  -->
+          <swipe :lists="bannerLists" v-if="bannerLists"></swipe>
+        <!-- <a href="https://maijia.youzan.com/mars/notice/detail?id=" class="notice"></a> -->
         <div class="section-title">优店推荐</div>
         <div class="section-content shops">
           <div class="shop-wrap">
