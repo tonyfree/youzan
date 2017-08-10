@@ -69,35 +69,37 @@
           <span class="lineblock-font">最热商品推荐</span>
         </div>
       </div>
-      <div class="hot-goods js-waterfull-wrap" data-src="">
-        <ul class="js-list js-lazy" data-src="">
-           <li v-for="list in lists" :key="list.id">
-            <div class="goods-item">
-              <a href="https://h5.youzan.com/v2/showcase/goods?alias=2fwig6rnqfq6m&amp;source=yzapp&amp;f_platform=yzapp">
-                <div class="thumb img-box">
-                  <img class="fadeIn" v-bind:src="list.img">
-                </div>
-                <div class="detail">
-                  <div class="title">{{list.name}}</div>
-                  <div class="price">￥{{list.price}}</div>
-                </div>
-              </a>
-            </div>
-          </li>
-        </ul>
-        <div class="loading-more"><span></span></div>
-      </div>
-      <div class="js-show-find category-guid" style="display: none;"></div>
+      <mt-loadmore :bottom-method="loadBottom" @bottom-status-change="handleBottomChange" :bottom-all-loaded="allLoaded" :auto-fill="false" ref="loadmore">
+        <div class="hot-goods js-waterfull-wrap" data-src="">
+          <ul class="js-list js-lazy" data-src="">
+            <li v-for="list in lists" :key="list.id">
+              <div class="goods-item">
+                <a href="https://h5.youzan.com/v2/showcase/goods?alias=2fwig6rnqfq6m&amp;source=yzapp&amp;f_platform=yzapp">
+                  <div class="thumb img-box">
+                    <img class="fadeIn" v-bind:src="list.img">
+                  </div>
+                  <div class="detail">
+                    <div class="title">{{list.name}}</div>
+                    <div class="price">￥{{list.price}}</div>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <!-- <div class="loading-more"><span></span></div> -->
+        </div>
+      </mt-loadmore>
+      <!-- <div class="js-show-find category-guid" style="display: none;"></div> -->
     </div>
   </div>
-  <div class="bottom-nav">
+   <div class="bottom-nav">
     <ul>
       <li class="active"><a href="https://maijia.youzan.com/mars/homepage"><i class="icon-home"></i><div>有赞</div></a></li>
       <li><a href="https://maijia.youzan.com/mars/category"><i class="icon-category"></i><div>分类</div></a></li>
       <li><a href="https://h5.youzan.com/v2/trade/cart?f_platform=yzapp&amp;source=yzapp"><i class="icon-cart"></i><div>购物车</div></a></li>
       <li><a href="https://h5.youzan.com/v2/buyer/member"><i class="icon-user"></i><div>我</div></a></li>
     </ul>
-  </div>
+  </div> 
 </body>
 
 </html>
