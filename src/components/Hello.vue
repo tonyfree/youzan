@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-    <ul>
+    <ul class="main">
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
       <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
@@ -49,5 +49,13 @@ li {
 
 a {
   color: #42b983;
+}
+
+.main {
+  display: flex;
+}
+
+.main li {
+  flex: 1;
 }
 </style>
