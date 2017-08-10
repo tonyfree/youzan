@@ -6,15 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    li {
+      height: 100px;
+    }
+  </style>
 </head>
 
 <body>
   <div id="app">
-    <mt-loadmore :top-method="loadTop" :bottom-method="loadBottom" :bottom-all-loaded="allLoaded" ref="loadmore">
-      <ul>
-        <li v-for="item in 20">{{ item }}</li>
-      </ul>
-    </mt-loadmore>
+    <ul v-infinite-scroll="loadMore" 
+    infinite-scroll-disabled="loading" 
+    infinite-scroll-distance="10">
+      <li v-for="item in list">{{ item }}</li>
+    </ul>
+    <mt-spinner type="fading-circle" color="#26a2ff" :size="60" v-show="loading"></mt-spinner>
   </div>
 </body>
 
