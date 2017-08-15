@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="no-js " lang="zh-CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="dns-prefetch" href="https://dn-kdt-img.qbox.me/">
+  <link rel="dns-prefetch" href="https://img.yzcdn.cn/">
+  <link rel="dns-prefetch" href="https://b.yzcdn.cn/">
+  <link rel="dns-prefetch" href="https://su.yzcdn.cn/">
+  <link rel="dns-prefetch" href="https://h5.youzan.com/v2/">
+  <link rel="dns-prefetch" href="https://h5.youzan.com/">
+  <meta name="keywords" content="有赞,移动电商服务平台">
+  <meta name="description" content="有赞是帮助商家在微信上搭建微信商城的平台，提供店铺、商品、订单、物流、消息和客户的管理模块，同时还提供丰富的营销应用和活动插件。">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="cleartype" content="on">
+  <link rel="shortcut icon" href="https://b.yzcdn.cn/v2/image/yz_fc.ico">
+  <title>列表</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- <link rel="stylesheet" href="./css/common.css"> -->
+  <!-- <link rel="stylesheet" href="./css/search.css"> -->
+</head>
+
+<body class=" " style="min-height: 667px;">
+  <div class="container with-top-search" style="min-height: 667px;" @touchmove="move">
+    <div class="custom-search js-search-bar">
+      <form>
+        <input type="search" class="custom-search-input" autocomplete="off" name="keyword" value="水果" placeholder="搜索更赞的商品" style="padding-left: 66px;">
+        <span class="icon-custom-search"></span>
+      </form>
+      <button class="custom-search-type-selection-btn custom-search-type-selection-btn-focus">商品</button>
+      <span class="cancel">取消</span>
+      <div class="search-type-dropdown-menu" style="display: none;">
+        <span class="search-type-dropdown-menu-indicator">
+            <i></i>
+        </span>
+        <div class="drop-menu-content">
+          <div class="search-type-goods">
+            <i class="icon-goods"></i>
+            <span>商品</span>
+          </div>
+          <div class="search-type-dropdown-menu-divider"></div>
+          <div class="search-type-shop">
+            <i class="icon-shop"></i>
+            <span>店铺</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search-content" style="display: none;"></div>
+    <div class="content">
+      <div class="search-wrap js-waterfull-wrap">
+        <ul class="js-list">
+           <li class="goods-item" v-for="list in searchList">
+            <a :href="'goods.html?id='+ list.id ">
+              <div class="thumb">
+                <img :src="list.image">
+                <i class="sell-out" v-if="list.isOut"></i>
+              </div>
+              <div class="detail">
+                <div class="title">{{list.name}}</div>
+                <div class="meta relative">
+                  <span class="price">￥{{list.price | currency}}</span>
+                  <span class="ship pull-right">包邮</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="list-finished">已经没有更多了</div>
+      </div>
+    </div>
+    <div class="go-to-top" v-show="show" @click="toTop" style="display: block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);"></div>
+  </div>
+</body>
+
+</html>
