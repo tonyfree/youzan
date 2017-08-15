@@ -65,6 +65,7 @@
         </div>
         <div class="class-category">
           <div id="scroll-main-wrap" class="main-content">
+            <!-- 综合排行  -->
             <div id="scroll-main-content" class="js-main-content inner-content" style="height: 943px; transform: translate3d(0px, 0px, 0px); " v-if="topIndex==0&&rankData">
               <div class="hot-wrap">
                 <div class="hot-goods">
@@ -81,7 +82,7 @@
                         </div>
                         <div class="detail">
                           <div class="title">{{list.name}}</div>
-                          <div class="price">￥{{list.price | number}}</div>
+                          <div class="price">￥{{list.price | currency}}</div>
                           <div class="recommend">
                             <span>推荐值:</span>
                             <span>{{list.recommend}}</span>
@@ -121,11 +122,13 @@
                 </div>
               </div>
             </div>
+            <!-- 其他一级分类  -->
             <div id="scroll-main-content" class="js-main-content inner-content" style="height: 534px; transform: translate3d(0px, 0px, 0px); " v-if="topIndex>0&&subData">
               <h3 class="category-title">热门品牌 </h3>
               <ul class="category-content">
                 <li class="category-item js-category-item" :data-item-id="list.id" :data-item-name="list.name" 
                   v-for="list in subData.brandList"
+                  @click="toSearch(list)"
                 >
                   <img :src="list.image" :alt="list.name" class="category-img">
                   <span class="category-item-name">
@@ -136,6 +139,7 @@
               <ul class="category-content">
                 <li class="category-item js-category-item" :data-item-id="list.id" :data-item-name="list.name" 
                   v-for="list in subData.categoryList"
+                  @click="toSearch(list)"
                 >
                   <img :src="list.image" :alt="list.name" class="category-img">
                   <span class="category-item-name">
