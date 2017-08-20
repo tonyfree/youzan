@@ -2595,7 +2595,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
   .list-finished span,
   .loading-more span {
-    background-image: url("/v2/image/loader@2x.gif")
+    background-image: url("https://b.yzcdn.cn/v2/image/loader@2x.gif")
   }
 }
 
