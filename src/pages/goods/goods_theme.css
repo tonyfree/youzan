@@ -1,0 +1,108 @@
+@charset "UTF-8";
+  .default-theme .main-btn::after,
+  .default-theme .vice-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    border-top: 1px solid rgba(0, 0, 0, .1)
+  }
+  
+  .default-theme .main-btn {
+    background-color: #F44;
+    color: #fff
+  }
+  
+  .default-theme .main-btn::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top
+  }
+  
+  .default-theme .main-btn:active {
+    background: #ff1b1b
+  }
+  
+  .default-theme .vice-btn {
+    background-color: #F85;
+    color: #fff
+  }
+  
+  .default-theme .vice-btn::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top
+  }
+  
+  .default-theme .vice-btn:active {
+    background: #ff6b2c
+  }
+  
+  .default-theme .current-price,
+  .default-theme .price-sub {
+    color: #F44!important
+  }
+  
+  .default-theme .goods-detail .tabber {
+    color: #F44;
+    border-bottom: 1px solid #F44
+  }
+  
+  .default-theme .goods-detail .tabber .item button.active {
+    color: #fff
+  }
+  
+  .default-theme .goods-detail .tabber button.active {
+    color: #F44;
+    border-bottom: 1px solid #F44
+  }
+  
+  .default-theme .commit-bill-btn,
+  .default-theme .pay-bill-btn,
+  .default-theme .sku-layout .sku-list-container .active {
+    background-color: #F44;
+    border-color: #F44
+  }
+  
+  .default-theme .trade-review-list .review-rate-tabber button.active {
+    background-color: #F44
+  }
+  
+  .default-theme .sku-layout .current-price .price-name,
+  .default-theme .sku-layout .current-price i {
+    color: #F44!important
+  }
+  
+  .default-theme .sku-layout .other-info .quota {
+    color: #F44
+  }
+  
+  .default-theme .theme-price-color {
+    color: #F44!important
+  }
+  
+  .default-theme .sc-goods-list .info p.goods-price>em,
+  .default-theme .service .icon-service {
+    color: #F44
+  }
