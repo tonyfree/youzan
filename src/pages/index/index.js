@@ -42,6 +42,7 @@ new Vue({
           this.lists = curLists
         }
         this.loading = false
+        this.pageNum++
       })
     },
     getBanner() {

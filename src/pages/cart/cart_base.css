@@ -275,9 +275,9 @@ dd {
 hr {
   margin: 10px 0;
   border: 0;
-  -webkit-border-image: url("/v2/image/wap/border-line.png") 2 stretch;
-  -moz-border-image: url("/v2/image/wap/border-line.png") 2 stretch;
-  border-image: url("/v2/image/wap/border-line.png") 2 stretch;
+  -webkit-border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line.png") 2 stretch;
+  -moz-border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line.png") 2 stretch;
+  border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line.png") 2 stretch;
   border-top: 2px solid #e5e5e5
 }
 
@@ -480,9 +480,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .copyright .ft-links ~ .ft-copyright {
-  -webkit-border-image: url("/v2/image/wap/border-line.png") 2 stretch;
-  -moz-border-image: url("/v2/image/wap/border-line.png") 2 stretch;
-  border-image: url("/v2/image/wap/border-line.png") 2 stretch;
+  -webkit-border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line.png") 2 stretch;
+  -moz-border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line.png") 2 stretch;
+  border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line.png") 2 stretch;
   border-top: 2px solid #e5e5e5
 }
 
