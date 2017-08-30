@@ -1,11 +1,11 @@
-import './member_base.css'
-import './member.css'
-
 import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
 
 let routes = [{
+  path: '/',
+  component: require('./components/member.vue')
+},{
   path: '/address',
   component: require('./components/address.vue'),
   children: [{
@@ -25,6 +25,6 @@ let router = new Router({
 })
 
 new Vue({
-  el: '.container',
+  el: '#app',
   router
 })

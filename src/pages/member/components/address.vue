@@ -4,8 +4,11 @@
   </div>
 </template>
 
-<style src="./address_base.css"></style>
-<style src="./address.css"></style>
+<style scoped>
+  @import './address_base.css';
+  @import './address.css';
+</style>
+
 
 
 
