@@ -1,14 +1,12 @@
 <template>
   <div class="container " style="min-height: 597px;">
-    <div class="block-list address-list section section-first js-no-webview-block">
-      <a class="block-item js-address-item address-item ">
-        <div class="address-title">tony 13112345678</div>
-        <p>广东省珠海市香洲区南方软件园</p>
-        <a class="address-edit" @click.stop="toEdit()">修改</a>
-      </a>
-      <a class="block-item js-address-item address-item address-item-default" href="https://pfmarket.youzan.com/user/address/form?m_alias=3nronalxt5iei&amp;id=69150193&amp;from=">
-        <div class="address-title">tony 13112345678</div>
-        <p>北京市北京市东城区天安门</p>
+    <div class="block-list address-list section section-first js-no-webview-block" v-for="list in lists" v-if="lists&&lists.length">
+      <a class="block-item js-address-item address-item" 
+        :class="{'address-item-default':list.isDefault}"  
+        @click.stop="toEdit(list)">
+        <div class="address-title">{{list.name}} {{list.tel}}</div>
+        <p>{{list.provinceName}}{{list.cityName}}{{list.districtName}}{{list.address}}</p>
+        <a class="address-edit" >修改</a>
       </a>
     </div>
     <div class="block stick-bottom-row center">
@@ -20,10 +18,26 @@
 </template>
 
 <script>
+  import Address from 'js/addressService.js'
+
   export default {
+    data() {
+      return {
+        lists: null
+      }
+    },
+    created() {
+      console.log('created')
+      Address.list().then(res => {
+        this.lists = res.data.lists
+      })
+    },
     methods: {
-      toEdit() {
-        this.$router.push({path:'/address/form',query:{type:'edit',obj:{name:'tony'}}})
+      toEdit(list) {
+        // 不建议用query传递对象类型的数值，在接收数据的页面刷新时数据将无法获取
+        // this.$router.push({path:'/address/form',query:{type:'edit',instance:list}})
+        sessionStorage.setItem('instance',JSON.stringify(list))
+        this.$router.push({path:'/address/form',query:{type:'edit'}})
       }
     }
   }
