@@ -45,6 +45,7 @@
                   :ref="'goods-'+shopIndex+'-'+goodIndex" 
                   :class="{editing:shop.editing}" 
                   v-for="(good,goodIndex) in shop.goodsList"
+                  :key="good.id"
                   @touchstart="start($event,good)"
                   @touchend="end($event,shopIndex,good,goodIndex)"
                   >
