@@ -27,17 +27,16 @@
       }
     },
     created() {
-      console.log('created')
       Address.list().then(res => {
         this.lists = res.data.lists
       })
     },
     methods: {
       toEdit(list) {
-        // 不建议用query传递对象类型的数值，在接收数据的页面刷新时数据将无法获取
-        // this.$router.push({path:'/address/form',query:{type:'edit',instance:list}})
-        sessionStorage.setItem('instance',JSON.stringify(list))
-        this.$router.push({path:'/address/form',query:{type:'edit'}})
+        this.$router.push({path:'/address/form',query:{type:'edit',instance:list}})
+        // 如果想在接收数据的页面刷新时依然可以获取传递的object类型数据
+        // sessionStorage.setItem('instance',JSON.stringify(list))
+        // this.$router.push({path:'/address/form',query:{type:'edit'}})
       }
     }
   }

@@ -14,8 +14,8 @@ export default {
       addressData: require('js/address.json'),
       cityList: null,
       districtList: null,
-      // instance: this.$route.query.instance,
-      instance: JSON.parse(sessionStorage.getItem('instance'))
+      instance: this.$route.query.instance,
+      // instance: JSON.parse(sessionStorage.getItem('instance'))
     }
   },
   created() {
