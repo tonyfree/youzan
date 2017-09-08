@@ -1,0 +1,713 @@
+.btn-1-1,
+.btn-2-1,
+.btn-3-1 {
+  display: inline-block;
+  padding: 0 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.btn-1-1 .tag,
+.btn-1-1 .btn,
+.btn-2-1 .tag,
+.btn-2-1 .btn,
+.btn-3-1 .tag,
+.btn-3-1 .btn {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.btn-1-1 {
+  width: 100%;
+  padding-left: 0
+}
+
+.btn-1-1 .tag,
+.btn-1-1 .btn {
+  width: 50% !important
+}
+
+.btn-2-1 {
+  width: 49.5%
+}
+
+.btn-3-1 {
+  width: 33.3%
+}
+
+.action-container {
+  padding: 0 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 0
+}
+
+.action-container>div {
+  margin-bottom: 0
+}
+
+.action-container>div:last-child {
+  margin-bottom: 0
+}
+
+.action-container>button,
+.action-container>.btn {
+  margin-bottom: 10px
+}
+
+.action-container>button:last-child,
+.action-container>.btn:last-child {
+  margin-bottom: 0
+}
+
+.popout-box .header {
+  position: relative;
+  margin-bottom: 10px;
+  -webkit-border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line.png") 2 stretch;
+  -moz-border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line.png") 2 stretch;
+  border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line.png") 2 stretch;
+  border-bottom: 2px solid #e5e5e5
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3 / 2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .popout-box .header {
+    border-bottom-width: 1px
+  }
+}
+
+.popout-box .header h2 {
+  margin-bottom: 16px;
+  line-height: 16px;
+  font-size: 16px
+}
+
+.popout-box .action-container {
+  margin: 10px 0 0 0;
+  padding: 0
+}
+
+.popout-box .action-container .btn.btn-block {
+  font-size: 14px
+}
+
+.name-card {
+  margin-left: 0px;
+  width: auto;
+  padding: 5px 0;
+  overflow: hidden;
+  position: relative
+}
+
+.name-card .thumb {
+  width: 60px;
+  height: 60px;
+  float: left;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-size: cover
+}
+
+.name-card .thumb img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%
+}
+
+.name-card a:hover,
+.name-card a:active {
+  text-decoration: none
+}
+
+.name-card .detail {
+  margin-left: 68px;
+  width: auto;
+  position: relative
+}
+
+.name-card .detail h3 {
+  margin-top: 1px;
+  color: #333;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%
+}
+
+.name-card .detail p {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+  margin: 0 0 2px;
+  color: #ccc
+}
+
+.name-card .detail a {
+  display: block
+}
+
+.name-card .detail .l2-ellipsis {
+  max-height: 34px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical
+}
+
+.name-card .btn-goods-link {
+  bottom: 8px;
+  right: 10px;
+  position: absolute;
+  line-height: 14px;
+  font-size: 12px
+}
+
+.name-card.name-card-3col {
+  padding: 8px 0;
+  padding-right: 85px
+}
+
+.name-card.name-card-3col .right-col {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  width: 78px;
+  padding-right: 10px;
+  font-size: 12px
+}
+
+.name-card.name-card-3col .right-col .price {
+  font-size: 14px;
+  color: #515151;
+  text-align: right;
+  line-height: 16px
+}
+
+.name-card.name-card-3col .right-col .num {
+  font-weight: 200;
+  text-align: right;
+  margin-top: 3px;
+  padding: 0;
+  color: #555
+}
+
+.name-card.name-card-3col .right-col .num .num-txt {
+  padding: 0;
+  line-height: 22px;
+  color: #515151
+}
+
+.name-card.name-card-3col .right-col .order-state {
+  font-size: 13px;
+  text-align: right
+}
+
+html,
+body {
+  font-size: 14px
+}
+
+.section {
+  -webkit-border-image: url("https://b.yzcdn.cn/v2/image/pf/ui/border-line.png") 2 stretch;
+  -moz-border-image: url("https://b.yzcdn.cn/v2/image/pf/ui/border-line.png") 2 stretch;
+  border-image: url("https://b.yzcdn.cn/v2/image/pf/ui/border-line.png") 2 stretch;
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3 / 2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .section {
+    border-top-width: 1px;
+    border-bottom-width: 1px
+  }
+}
+
+.secondary {
+  font-size: 12px;
+  color: #999;
+  line-height: 1.4em
+}
+
+.btn-standard {
+  min-width: 80px;
+  padding: 8px 5px;
+  font-size: 14px;
+  line-height: 1em;
+  background-color: #ff5050;
+  color: #fff;
+  border: 1px solid transparent
+}
+
+.btn-standard:hover,
+.btn-standard:active {
+  color: #fff;
+  background-color: #ff5050
+}
+
+.stick-bottom-row {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 16px;
+  height: 50px
+}
+
+.stick-bottom-row.block {
+  -webkit-border-image: url("https://b.yzcdn.cn/v2/image/pf/ui/border-line.png") 2 stretch;
+  -moz-border-image: url("https://b.yzcdn.cn/v2/image/pf/ui/border-line.png") 2 stretch;
+  border-image: url("https://b.yzcdn.cn/v2/image/pf/ui/border-line.png") 2 stretch;
+  border-top: 2px solid #e5e5e5;
+  background-color: #fff
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3 / 2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .stick-bottom-row.block {
+    border-top-width: 1px
+  }
+}
+
+.stick-bottom-row .btn {
+  float: right;
+  border-radius: 0;
+  min-width: 80px;
+  font-size: 16px;
+  line-height: 50px;
+  height: 50px;
+  padding: 0 10px
+}
+
+.stick-bottom-row .money {
+  font-size: 16px;
+  line-height: 20px
+}
+
+.stick-bottom-content {
+  float: left;
+  height: 34px;
+  padding: 8px 10px
+}
+
+.stick-bottom-content.pull-right {
+  float: right
+}
+
+.split-right {
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  -webkit-border-image: url("https://b.yzcdn.cn/v2/image/pf/ui/border-line.png") 2 stretch;
+  -moz-border-image: url("https://b.yzcdn.cn/v2/image/pf/ui/border-line.png") 2 stretch;
+  border-image: url("https://b.yzcdn.cn/v2/image/pf/ui/border-line.png") 2 stretch;
+  border-right: 2px solid #e5e5e5
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3 / 2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .split-right {
+    border-right-width: 1px
+  }
+}
+
+.form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.form.mg-top-20 {
+  margin-top: 20px
+}
+
+.form.mg-bottom-20 {
+  margin-bottom: 20px
+}
+
+.form .block-item {
+  display: table;
+  width: 100%;
+  padding: 0
+}
+
+.form .block-item label {
+  display: table-cell;
+  width: 90px;
+  padding: 10px 0
+}
+
+.form .block-item textarea,
+.form .block-item input,
+.form .block-item select,
+.form .block-item a,
+.form .block-item span {
+  display: table-cell;
+  overflow: hidden;
+  padding: 10px 0;
+  min-height: 22px;
+  line-height: 22px;
+  font-size: 14px
+}
+
+.form .block-item textarea,
+.form .block-item input,
+.form .block-item select {
+  width: 99%;
+  background-color: #fff;
+  border: 0px none;
+  outline: none
+}
+
+.form .block-item textarea {
+  height: 50px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  resize: none
+}
+
+.form .block-item:last-child {
+  border-bottom: 0px none
+}
+
+.search-form {
+  position: relative;
+  padding: 7px 10px 7px 10px;
+  background-color: #efefef
+}
+
+.search-form .search-input {
+  width: 100%;
+  height: 30px;
+  padding-left: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline-width: 0px;
+  font-size: 14px
+}
+
+.search-form .search-input:focus {
+  -webkit-appearance: none
+}
+
+.search-form .search-cancel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 16px;
+  color: #666
+}
+
+.search-form .search-icon {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  width: 30px;
+  height: 30px
+}
+
+.search-form .search-icon::before,
+.search-form .search-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%
+}
+
+.search-form .search-icon::before {
+  margin-top: -7px;
+  margin-left: -8px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #a3a3a3;
+  background: transparent;
+  border-radius: 12px
+}
+
+.search-form .search-icon::after {
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 2px;
+  height: 7px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #a3a3a3
+}
+
+.search-form .close-icon {
+  position: absolute;
+  top: 2px;
+  right: 55px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  background: #a3a3a3;
+  -webkit-transform: scale(0.42);
+  -moz-transform: scale(0.42);
+  -ms-transform: scale(0.42);
+  transform: scale(0.42);
+  -webkit-tap-highlight-color: transparent
+}
+
+.search-form .close-icon::before,
+.search-form .close-icon::after {
+  content: '';
+  height: 6px;
+  width: 28px;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 17px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+
+.search-form .close-icon::after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+
+.search-bar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  overflow: hidden;
+  background-color: #fff
+}
+
+.search-bar .search-form {
+  padding-right: 55px
+}
+
+.search-bar .history-list {
+  padding: 10px
+}
+
+.search-bar .history-list li {
+  float: left;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 0 10px 10px 0;
+  color: #666;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px
+}
+
+.search-bar .search-recom-list li {
+  float: left;
+  width: 50%;
+  padding-bottom: 5px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 30px
+}
+
+.search-bar .search-recom-list li p {
+  padding: 5px;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.search-bar .search-recom-list li p b {
+  font-weight: bold
+}
+
+.search-bar .tag.tag-clear {
+  width: 145px;
+  height: 40px;
+  margin-top: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  border: 1px solid #666;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.address-list .address-item {
+  padding-left: 40px
+}
+
+.address-list .address-item::before {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  background-size: 22px;
+  background-image: url("https://b.yzcdn.cn/v2/image/pf/icon/uncheck.png")
+}
+
+.address-list .address-item .address-edit {
+  position: absolute;
+  /* content: '修改'; */
+  font-size: 12px;
+  padding-left: 25px;
+  color: #999;
+  top: 20px;
+  right: 5px;
+  width: 30px;
+  height: 20px;
+  background: url("https://b.yzcdn.cn/v2/image/pf/icon/m.png") no-repeat 5px 4px;
+  background-size: 14px
+}
+
+.address-list .address-title {
+  font-size: 16px
+}
+
+.address-list .address-item-default {
+  position: relative
+}
+
+.address-list .address-item-default::before {
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  background-image: url("https://b.yzcdn.cn/v2/image/pf/icon/check.png")
+}
+
+.address-list p {
+  color: #666
+}
+
+.section.section-first {
+  margin-top: 10px
+}
+
+.block-control-btn {
+  border-top: 0
+}
+
+.select-group {
+  font-size: 0
+}
+
+.select-group select {
+  display: inline-block !important;
+  width: 33% !important;
+  font-size: 12px
+}
+
+.stick-bottom-row .btn-standard,
+.stick-bottom-row .btn-blue {
+  float: none;
+  border-radius: 3px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 7px
+}
+
+.block-item label,
+.block-item input {
+  vertical-align: middle
+}
+
+.search-form .close-icon {
+  right: 8px
+}
+
+.item-info {
+  -webkit-border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line-2.png") 2 stretch;
+  -moz-border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line-2.png") 2 stretch;
+  border-image: url("https://b.yzcdn.cn/v2/image/wap/border-line-2.png") 2 stretch;
+  border-top: 2px solid #e5e5e5;
+  position: relative;
+  padding: 15px 10px;
+  background-color: #fff;
+  display: block;
+  line-height: 1.5;
+  padding-left: 0;
+  margin-left: 10px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3 / 2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .item-info {
+    border-top-width: 1px
+  }
+}
+
+.item-info.right-arrow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  margin-top: -6px;
+  width: 6px;
+  height: 12px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAMAAAD57OxYAAAAPFBMVEUAAACZmZmlpaWampqZmZmampqampqampqampqbm5ubm5ucnJyZmZmfn5+bm5uZmZmampqampqbm5uZmZnmDXU5AAAAE3RSTlMA8Qjo3dHCn4lPPi8jGA+ysXRhTrGNsAAAAFxJREFUGNNl0EcOwCAMRNEUekv5979r2Bgr4BVPQrbH27/Cq+8H4oCHPQmOqysPOTiLqFkwVVQN2CYqJ7hDlHe4BVvq8kMRCCv0mzZYW+tQXUcXnSNoOI09H2StDz/YBU9Q8POZAAAAAElFTkSuQmCC) no-repeat;
+  background-size: 6px 12px
+}
+
+.item-name {
+  line-height: 20px;
+  margin-bottom: 5px;
+  font-size: 14px
+}
+
+.item-address {
+  font-size: 12px;
+  color: #666;
+  margin-right: 20px
+}
