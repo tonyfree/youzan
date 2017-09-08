@@ -180,6 +180,7 @@ new Vue({
             this.removeShop()
           }
           this.removePopup  = false
+          // this.$refs[`goods-${shopIndex}-${goodIndex}`][0].style.left = '0px'
         })
       }else {
         let ids = []
@@ -228,6 +229,7 @@ new Vue({
       if(endX - good.startX > 100) {
         left = '0px'
       }
+      // console.log(this.$refs[`goods-${shopIndex}-${goodIndex}`])
       Volecity(this.$refs[`goods-${shopIndex}-${goodIndex}`], {
         left
       })
