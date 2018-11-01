@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>maijia</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html class="no-js " lang="zh-CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- DNS预解析  -->
+  <link rel="dns-prefetch" href="https://dn-kdt-img.qbox.me/">
+  <link rel="dns-prefetch" href="https://img.yzcdn.cn/">
+  <link rel="dns-prefetch" href="https://b.yzcdn.cn/">
+  <link rel="dns-prefetch" href="https://su.yzcdn.cn/">
+  <link rel="dns-prefetch" href="https://h5.youzan.com/v2/">
+  <link rel="dns-prefetch" href="https://h5.youzan.com/">
+  <meta name="keywords" content="有赞,移动电商服务平台">
+  <meta name="description" content="有赞是帮助商家在微信上搭建微信商城的平台，提供店铺、商品、订单、物流、消息和客户的管理模块，同时还提供丰富的营销应用和活动插件。">
+  <!-- 是否为手持设备优化 -->
+  <meta name="HandheldFriendly" content="True">
+  <!-- 为某个宽度特殊优化 -->
+  <meta name="MobileOptimized" content="320">
+  <!-- 电话号码和邮箱识别 -->
+  <meta name="format-detection" content="telephone=no">
+  <!-- 针对LCD液晶显示器设计，可提高文字的清晰度 -->
+  <meta http-equiv="cleartype" content="on">
+  <link rel="shortcut icon" href="https://b.yzcdn.cn/v2/image/yz_fc.ico">
+  <title>发现朋友圈的推荐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="" style="min-height: 860px;">
+  <div class="vue-el">
+    <div class="container with-bottom-nav" style="min-height: 667px;">
+      <div class="content">
+        <!-- <div class="js-image-swiper custom-image-swiper  custom-image-swiper-single" data-images="1">
+         </div>  -->
+          <swipe :lists="bannerLists" name="swipe.vue" v-if="bannerLists"></swipe>
+        <!-- <a href="https://maijia.youzan.com/mars/notice/detail?id=" class="notice"></a> -->
+        <div class="section-title">优店推荐</div>
+        <div class="section-content shops">
+          <div class="shop-wrap">
+            <div class="shop-item">
+              <a href="https://h5.koudaitong.com/v2/showcase/feature?alias=zjtozpgn">
+                <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2016/09/23/FgQUVNXnvpFKFl1DIN2LXhPA1cxy.png?imageView2/2/w/300/h/0/q/75/format/png">
+              </a>
+            </div>
+            <div class="shop-item">
+              <a href="https://h5.koudaitong.com/v2/feature/1e22e3vtu">
+                <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2016/08/03/FqNGnCQS1eq9nIhRg48E_UfFf9K2.png?imageView2/2/w/300/h/0/q/75/format/png">
+              </a>
+            </div>
+            <div class="shop-item">
+              <a href="https://h5.koudaitong.com/v2/feature/8oups7zk">
+                <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2016/08/05/Fv5hhMZrtPZQWE7fape0ddEYtSuy.png?imageView2/2/w/300/h/0/q/75/format/png">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="section-content daily">
+          <ul>
+          </ul>
+        </div>
+        <div class="line-block line-block-gray">
+          <div class="lineblock-title">
+            <span class="lineblock-font">最热商品推荐</span>
+          </div>
+        </div>
+          <div class="hot-goods js-waterfull-wrap" data-src="">
+            <ul class="js-list js-lazy" data-src="" 
+              v-infinite-scroll="getLists"
+              infinite-scroll-disabled="loading"
+              infinite-scroll-distance="10">
+              <li v-for="list in lists" :key="list.id">
+                <div class="goods-item">
+                  <a :href="'goods.html?id='+list.id">
+                    <div class="thumb img-box">
+                      <img class="fadeIn" v-bind:src="list.img">
+                    </div>
+                    <div class="detail">
+                      <div class="title">{{list.name}}</div>
+                      <div class="price">￥{{list.price}}</div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="loading-more" v-show="loading"><span></span></div> 
+          </div>
+        <!-- <div class="js-show-find category-guid" style="display: none;"></div> -->
+      </div>
+    </div>
+    <foot></foot>
+  </div>
+</body>
+
 </html>
